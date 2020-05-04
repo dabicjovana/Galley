@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Assignment 3 Galler</title>
+        <style>
+            .body {
+                font-family: sans-serif;
+            }
+
+            img {
+                width: 100%;
+                background-color: #7bbcf1; ;
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            #container {
+                max-width: 960px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            #galerija {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-gap: 4px;
+              
+
+            }
+            .slika {
+                width: 150px;
+                border: solid 0px;
+            }
+
+            figcaption {
+                background-color: #dbf1f1fd;
+                border-radius: 0px 0px 10px 10px;
+                font-size: 12px;
+               text-align: center;
+            }
+
+            @media screen and (max-width: 1024px) {
+                #galerija {
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                #galerija {
+                    grid-template-columns: 1fr 1fr 1fr;
+                    margin: 0 auto;
+                }
+            }
+
+            @media screen and (max-width: 414px) {
+                #container {
+                    margin: auto auto;
+                }
+                #galerija {
+                    grid-template-columns: 1fr;
+                }
+                h1{
+                    font-size: 21px;
+                }
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="container">
+            <h1>Gallery Heading</h1>
+                <div id="galerija">
+                    <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                    <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                    <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                    <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                    <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                    <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                    <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                    <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                    <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                    <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                </div>
+                <div id="paragraf">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sint eaque sed quae accusamus ad inventore, natus impedit,
+                         exercitationem doloribus totam pariatur neque laborum! 
+                         Doloribus dolorem tenetur iure ullam corrupti nemo.
+                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                         Omnis nobis quibusdam hic eligendi, explicabo magnam vitae
+                          quos libero harum ratione placeat enim neque magni impedit
+                           illum velit, excepturi, ullam vel!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                           Sint eaque sed quae accusamus ad inventore, natus impedit,
+                            exercitationem doloribus totam pariatur neque laborum! 
+                            Doloribus dolorem tenetur iure ullam corrupti nemo.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            Omnis nobis quibusdam hic eligendi, explicabo magnam vitae
+                             quos libero harum ratione placeat enim neque magni impedit
+                              illum velit, excepturi, ullam vel!  </p>
+                </div>
+        </div>
+    </body>
